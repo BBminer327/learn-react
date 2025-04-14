@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "username": "admin01",
+      "password": "admin123", 
+      "name": "สมชาย แอดมิน",
+      "email": "admin01@example.com",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user01",
+      "password": "userpass", 
+      "name": "สุดา ผู้ใช้",
+      "email": "user01@example.com",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "manager01",
+      "password": "manager321",
+      "name": "วิทยา ผู้จัดการ",
+      "email": "manager01@example.com",
+      "role": "manager"
+    }
+]
+  
