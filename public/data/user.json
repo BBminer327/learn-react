@@ -1,10 +1,10 @@
 [
     {
       "id": 1,
-      "username": "admin01",
-      "password": "admin123", 
+      "username": "admin",
+      "password": "1234", 
       "name": "สมชาย แอดมิน",
-      "email": "admin01@example.com",
+      "email": "admin@gmail.com",
       "role": "admin"
     },
     {

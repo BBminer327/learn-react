@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../assets/Login.css';
+import { useNavigate } from 'react-router-dom'; 
+import '../assets/index.css';
 import MyInputBox from '../component/MyInputBox';
 import MyLabel from '../component/MyLabel';
 import MyButton from '../component/MyButton';
@@ -8,6 +9,7 @@ import Link from '../component/Link';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ function Login() {
 
       if (foundUser) {
         alert(`ยินดีต้อนรับ ${foundUser.name} (${foundUser.role})`);
-        // ไปหน้าอื่นหรือเซฟ session ได้ที่นี่
+        navigate('/home');
       } else {
         alert('อีเมลหรือรหัสผ่านไม่ถูกต้อง');
       }
