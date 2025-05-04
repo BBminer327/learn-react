@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="w-[300px] h-screen sticky top-0 bg-neutral-800 text-white p-6">
-      <div className="logo p-5 text-center text-3xl">React Router</div>
-      <ul className="nav-links flex flex-col justify-between h-[calc(100%-60px)] font-medium">
-        <div>
-          <li className="py-3 px-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex">
+    <nav className="w-[300px] h-screen sticky top-0 bg-neutral-800 text-white relative">
+      <div className="logo py-5 px-8 text-center text-3xl absolute text-center w-full">React Router</div>
+      <div className="absolute top-[100px] w-full px-6">
+        <ul className="nav-links flex flex-col font-medium">
+          <li className="p-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex">
             <svg
               className="w-6 h-6 mr-2"
               aria-hidden="true"
@@ -29,7 +29,7 @@ function Navbar() {
 
             <Link to="/home">Home</Link>
           </li>
-          <li className="py-3 px-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex">
+          <li className="p-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex">
             <svg
               className="w-6 h-6 mr-2"
               aria-hidden="true"
@@ -50,7 +50,7 @@ function Navbar() {
 
             <Link to="/about">About</Link>
           </li>
-          <li className="py-3 px-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex">
+          <li className="p-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex">
             <svg
               className="w-6 h-6 mr-2"
               aria-hidden="true"
@@ -71,8 +71,11 @@ function Navbar() {
 
             <Link to="/contact">Contact</Link>
           </li>
-        </div>
-        <li className="py-3 px-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex">
+        </ul>
+      </div>
+      <div className="bottom-[20px] absolute w-full px-6">
+      <ul className="nav-links flex flex-col font-medium">
+        <li className="p-3 hover:bg-neutral-50 hover:text-stone-900 rounded-2xl flex ">
           <svg
             className="w-6 h-6 mr-2"
             aria-hidden="true"
@@ -94,6 +97,7 @@ function Navbar() {
           <Link to="/">Logout</Link>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }
