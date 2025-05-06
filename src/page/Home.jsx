@@ -26,7 +26,7 @@ function Home() {
     <div className="flex h-screen">
       <Navbar />
       <section className="w-full flex-1 bg-neutral-900 overflow-y-auto">
-        <div className="py-6 px-12 bg-neutral-900 sticky top-0 z-10">
+        <div className="py-6 px-12 bg-neutral-900">
           <Slider {...settings}>
             {images.map((src, i) => (
               <div key={i}>
